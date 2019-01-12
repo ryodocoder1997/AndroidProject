@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choose_news_background">
+
+    <TextView
+        android:id="@+id/TxtAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mời chọn Báo Online:"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:shadowColor="@color/colorLightGrey"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="2"
+        />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupNSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtAsk"
+        android:layout_marginTop="3dp">
+
+        <RadioButton
+            android:id="@+id/RdbVnExpress"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:checked="true"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:buttonTint="@color/colorWhite"
+            android:text="VNExpress"
+            android:textColor="@color/colorWhite"
+            android:shadowColor="@color/colorLightGrey"
+            android:shadowDx="5"
+            android:shadowDy="0"
+            android:shadowRadius="2"/>
+
+        <RadioButton
+            android:id="@+id/RdbTuoiTre"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:buttonTint="@color/colorWhite"
+            android:text="Tuổi Trẻ"
+            android:textColor="@color/colorWhite"
+            android:shadowColor="@color/colorLightGrey"
+            android:shadowDx="5"
+            android:shadowDy="0"
+            android:shadowRadius="2"/>
+
+        <RadioButton
+            android:id="@+id/RdbVietNamNet"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:buttonTint="@color/colorWhite"
+            android:text="VietNam Net"
+            android:textColor="@color/colorWhite"
+            android:shadowColor="@color/colorLightGrey"
+            android:shadowDx="5"
+            android:shadowDy="0"
+            android:shadowRadius="2"/>
+    </RadioGroup>
+<RelativeLayout
+    android:id="@+id/relimg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:background="@color/colorWhite"
+    android:layout_below="@+id/RadioGroupNSelect">
+    <ImageSwitcher
+        android:id="@+id/imgsw"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relimg"
+        android:background="@drawable/buttonshape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="Chọn"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_below="@+id/BtnStart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="0dp"
+        android:background="#867979">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:text="Version 1.0.3"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

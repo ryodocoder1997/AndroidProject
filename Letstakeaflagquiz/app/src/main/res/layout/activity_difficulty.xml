@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/difficulty_background">
+
+    <TextView
+        android:id="@+id/TxtAsk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Please select your difficulty:"
+        android:background="@drawable/difficulty_ask"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:shadowColor="#B8B8B8"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupDSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtAsk"
+        android:layout_marginTop="3dp"
+        >
+
+        <RadioButton
+            android:id="@+id/RdbEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_easy_radio_button"
+            android:checked="true"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:button="@android:color/transparent"/>
+
+        <RadioButton
+            android:id="@+id/RdbNormal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_normal_radio_button"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:button="@android:color/transparent"/>
+
+        <RadioButton
+            android:id="@+id/RdbHard"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_hard_radio_button"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:button="@android:color/transparent"/>
+
+        <RadioButton
+            android:id="@+id/RdbMix"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_mix_radio_button"
+            android:textSize="25dp"
+            android:paddingLeft="31dp"
+            android:button="@android:color/transparent" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroupDSelect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/custom_start_button"
+        android:layout_gravity="center"
+        />
+
+
+</RelativeLayout>

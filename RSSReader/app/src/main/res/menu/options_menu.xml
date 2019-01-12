@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title="Tìm kiếm"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/info"
+        android:title="Thông tin"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/oldnews"
+        android:title="Xem tin đã đọc"
+        android:icon="@drawable/ic_check_listview"
+        app:showAsAction="collapseActionView|ifRoom" />
+</menu>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/highscore_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "HIGH SCORES"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:background="#00FFCC"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text= "Easy Mode"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/easy_mode_border"
+        />
+    <TextView
+        android:id="@+id/TxtEasyHighscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text = "Normal Mode"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/normal_mode_border"
+        />
+    <TextView
+        android:id="@+id/TxtNormalHighscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text = "Hard Mode"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/hard_mode_border"
+        />
+    <TextView
+        android:id="@+id/TxtHardHighscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text = "Mix Mode"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/mix_mode_border"
+        />
+    <TextView
+        android:id="@+id/TxtMixHighscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/BtnBack"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_back_button"
+        android:padding="20dp"
+        />
+</LinearLayout>
